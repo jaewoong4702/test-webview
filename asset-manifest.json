@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "./static/css/main.170ecf97.css",
+    "main.js": "./static/js/main.dd670019.js",
+    "static/media/Pretendard-Thin.ttf": "./static/media/Pretendard-Thin.23965237737042c7c087.ttf",
+    "static/media/Pretendard-ExtraLight.ttf": "./static/media/Pretendard-ExtraLight.3a1f8545bfb6498f1f14.ttf",
+    "static/media/Pretendard-Light.ttf": "./static/media/Pretendard-Light.be916151766e60d80835.ttf",
+    "static/media/Pretendard-Regular.ttf": "./static/media/Pretendard-Regular.fbe5b096111efa3e3bc2.ttf",
+    "static/media/Pretendard-Medium.ttf": "./static/media/Pretendard-Medium.07e5324da6d2eb8817c1.ttf",
+    "static/media/Pretendard-SemiBold.ttf": "./static/media/Pretendard-SemiBold.8ae7df0e2ac61e2d2788.ttf",
+    "static/media/Pretendard-ExtraBold.ttf": "./static/media/Pretendard-ExtraBold.cffbbae60cbb858199b0.ttf",
+    "static/media/Pretendard-Black.ttf": "./static/media/Pretendard-Black.6ffb4c1216878d939b7c.ttf",
+    "static/media/Pretendard-Bold.ttf": "./static/media/Pretendard-Bold.be4e300c014733a8521f.ttf",
+    "static/media/Dohyeon.ttf": "./static/media/Dohyeon.d20f6c68004f7588ee16.ttf",
+    "static/media/image1.png": "./static/media/image1.81052058e6d29902af67.png",
+    "static/media/cliqq.png": "./static/media/cliqq.0a39c44e481034b27b5e.png",
+    "index.html": "./index.html",
+    "static/media/ic-refresh.svg": "./static/media/ic-refresh.d8ed4792839b3b6edfce669b413ed43f.svg",
+    "main.170ecf97.css.map": "./static/css/main.170ecf97.css.map",
+    "main.dd670019.js.map": "./static/js/main.dd670019.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.170ecf97.css",
+    "static/js/main.dd670019.js"
+  ]
+}
