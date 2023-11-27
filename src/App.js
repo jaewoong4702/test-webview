@@ -13,7 +13,7 @@ function App() {
     const { toast, showToast, hideToast } = useToast();
     const [isSuccessModalVisible, setSuccessModalVisible] = useState(false);
     const [log, setLog] = useState("");
-    const [error, setError] = useState("");
+    const [errors, setErrors] = useState(null);
     const [isLoading, setLoading] = useState(false);
 
     const apiUrl = "https://api-dev.celebe.io";
@@ -23,11 +23,11 @@ function App() {
     // Android와 iOS에 메시지를 전송하는 함수
     function sendMessageToNativeApp(methodName, data) {
         const jsonString = JSON.stringify(data);
-        setLog((prev) => prev + `\n sendMessage : ${jsonString}`);
 
-        console.log(window.webkit);
         // Android와 통신
         if (window.Android) {
+            setLog((prev) => prev + `\n sendMessage : ${jsonString}`);
+            setErrors(JSON.stringify(window.Android));
             window.Android[methodName](jsonString);
         }
 
@@ -98,9 +98,9 @@ function App() {
         }
     }
     useEffect(() => {
-        window.addEventListener("nativeResponse", handleApiResponse);
+        window.addEventListener("sendApiRequest", handleApiResponse);
         return () => {
-            window.removeEventListener("nativeResponse", handleApiResponse);
+            window.removeEventListener("sendApiRequest", handleApiResponse);
         };
     }, []);
 
@@ -136,6 +136,8 @@ function App() {
                         <p>a redemption code is sent to the DM.</p>
                         <p>You can redeem the code on CLIQQ Wallet.</p>
                         <p>{log}</p>
+                        <p>===</p>
+                        <p>{errors}</p>
                     </div>
                 </div>
             </div>
